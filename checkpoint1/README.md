@@ -57,3 +57,4 @@ done <<< "$layers"
 
 ## Project Current state
 - LPEs are being parsed with a custom patched OSL parsing library and loaded into the integrator. The integrator has been refactored to allow tracing through the automata in the correct order and automata evaluation functions have been added to the integrator. I am currently working on adding LPEs to the list of output layers.
+- Code can be found at: https://projects.blender.org/Scott-Milner/blender/compare/aa1f65fd608f05b18284d84ea33e826d83910c9f..97ef809c52401461b0348438dcd2f3debf3c8dcc
