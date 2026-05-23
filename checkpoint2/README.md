@@ -1,15 +1,3 @@
-> For this checkpoint, we are expecting that you have the evaluation you submitted for the first checkpoint, but with some meaningful intermediate results. This could be a comparison of your method against a baseline, a set of generation outputs from your current system for all your test prompts, etc. It would also be helpful to present these results in the form of graphs, tables or images (depending on your evaluation).
-> 
-> Using your current results, you should then be able to tell us what you have done or answered successfully relative to your project goals or questions, and what is still not up to par or unanswered (and how you plan to address that), according to your evaluation framework.
-
-
-> In general, this is the week where you show us a couple of things:
-> 1. You've solidified your evaluation plan from the first checkpoint in response to CA feedback, or to new findings of your own.  In response you now have a good picture of what you are going to show: a demo? a set of images? a graph? a table?  The best way to articulate that is to stub it out, and leave placeholders for data that doesn't exist.
-> 2. You've taken steps to fill in the stubbed out evaluation with real data. That might mean you've run your baselines and have the final images or numbers?  Or that might mean the initial version of your algorithm is complete and you have a preliminary result.
-> 3. Then, the rest of your project is filling in the evaluation template that you've put forth.  e.g., doing the work to fill in missing numbers/images? making the numbers go "up", making the images better, etc.
-
-
-
 # How do I match up to last check-in's evaluation metric?
 
 ## Evaluation 1: Don't Break Anything :)
@@ -65,14 +53,18 @@ Total Test time (real) = 268.86 sec
 I get outputs for direct and indirect passes, but they do not match up with Blender's passes. Currently not all rays are being captured, and some diffuse rays are captured as glossy and vice-versa.
 
 Ground-truth diffuse pass:
-![[Screenshot 2026-05-22 at 11.52.51 PM.png]]
+
+<img width="952" height="538" alt="Screenshot 2026-05-22 at 11 52 51 PM" src="https://github.com/user-attachments/assets/a4033099-fe52-4c75-ab88-dbda172b72ee" />
 
 Our diffuse pass:
-![[Screenshot 2026-05-22 at 11.53.19 PM.png]]
+
+<img width="954" height="538" alt="Screenshot 2026-05-22 at 11 53 19 PM" src="https://github.com/user-attachments/assets/2cdd0129-49e9-4a34-b718-cbd7a3ea367c" />
+
 
 Diff:
 
-![[Screenshot 2026-05-22 at 11.53.59 PM.png]]
+<img width="954" height="537" alt="Screenshot 2026-05-22 at 11 53 59 PM" src="https://github.com/user-attachments/assets/a82383cf-5a12-4146-b81a-c115abbc749b" />
+
 
 ## Evaluation 3: New features
 - Still need to be implemented! Currently, light tags and object tags are parsed and passed into the render kernel, but just return black.
