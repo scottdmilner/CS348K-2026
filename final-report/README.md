@@ -113,7 +113,7 @@ In order to get this code production-ready for submission to the Blender project
 - light tagging (similar to object tagging)
 - kernel-level toggle (don't incur the extra render time overhead if the user doesn't request LPEs)
 
-Regarding denoising, I had initially hoped to implement a denoising setup that batch-denoised LPEs in the way that the RenderMan denoiser can, but this is currently beyond the abilities of Intel OIDN, Blender's final-frame denoiser. As you can see in the image diff below (multiplied by 5x for visibility), after denoising, LPE object mattes are still very close, but no longer provide exact sample-precise matte extraction.
+Regarding denoising, I had initially hoped to implement a denoising setup that batch-denoised LPEs in the way that the RenderMan denoiser can, but this is currently beyond the abilities of Intel OIDN, Blender's final-frame denoiser. As you can see in the image diff below (multiplied by 5x for visibility), after denoising, LPE object mattes are still very close, but no longer provide exact sample-precise matte extraction. The diff is small enough that these mattes are still very usable even when denoising.
 
 <img width="538" height="230" alt="Screenshot 2026-06-03 at 7 44 28 AM" src="https://github.com/user-attachments/assets/844f419a-12dd-421e-b995-af84814f96cd" />
 
