@@ -73,9 +73,11 @@ Here is a simple scene with a monkey that is moving very fast:
 Methods that are binary or alpha-only fail catastrophically at extracting a clean matte. The compositing artist working downstream will need to spend time feathering and cleaning the mask to be able to use it without causing a noticeable "halo" effect, where their changes either spill over into the background or do not actually reach the edges of the foreground.
 
 <img width="500" height="500" alt="monkey_id" src="https://github.com/user-attachments/assets/074e4515-3e8e-4b39-bc2f-2535994dca27" />
+
 *Object ID*
 
 <img width="500" height="500" alt="monkey_crypto" src="https://github.com/user-attachments/assets/4b60b95d-ad9d-4aa2-a779-382a7a58c6fb" />
+
 *Cryptomatte*
 
 In contrast, the LPE `C'monkey'.*L` captures the color weight of the monkey only, providing a clean mask.
